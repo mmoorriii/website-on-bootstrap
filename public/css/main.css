@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background: #dad6d6 !important;
+}
+
+body,
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+body a,
+html a {
+  text-decoration: none;
+  color: #000;
+}
+body li,
+html li {
+  list-style: none;
+}
+
+header {
+  border-radius: 10px;
+  margin-top: 30px;
+  border-bottom: 5px solid silver;
+}
+header .navbar-brand span {
+  display: inline-block;
+  border: 3px solid darkred;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  transition: transform 0.8s ease;
+}
+header .navbar-brand span:hover {
+  transform: rotate(360deg);
+}
+header .navbar-brand span img {
+  width: 60px;
+}
+header .form-control {
+  width: 300px !important;
+}
+header .btn-light {
+  border: 1px solid silver;
+  background: rgb(234, 231, 231);
+}
+header .btn-light:hover {
+  background: rgb(203, 202, 202);
+}
+header .text-danger {
+  color: darkred !important;
+  margin-top: -10px;
+}
+
+.offcanvas {
+  background-color: rgba(166, 163, 163, 0.7882352941) !important;
+  border: 0 !important;
+  padding: 5% 15% 0;
+  height: 100% !important;
+  margin: 0 auto;
+}
+.offcanvas .offcanvas-body {
+  height: 100% !important;
+}
+.offcanvas .offcanvas-title {
+  color: rgb(150, 36, 36);
+  font-size: 35px;
+}
+.offcanvas input {
+  width: 100% !important;
+}
+.offcanvas .btn-danger {
+  background-color: rgb(134, 32, 32);
+  border: 0 !important;
+  color: #ebeaea;
+}
+
+section {
+  border-radius: 5px !important;
+  margin-top: 40px;
+  background-color: rgb(134, 32, 32) !important;
+  border: 2px solid rgb(83, 24, 24);
+}
+section .fw-light {
+  font-size: 18px !important;
+}
+section .img img {
+  transition: transform 0.8s ease-in-out;
+}
+section .img img:hover {
+  transform: translateY(-5px);
+}
+
+.main img {
+  height: 140px;
+}
+.main .cards .card {
+  flex: 0 1 47%;
+  margin-bottom: 3%;
+}
+.main .cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.main .cards .card .card-body .card-text {
+  flex: 1 1 auto;
+}
+.main .cards .card .card-body .btn-warning {
+  align-self: flex-start;
+}
+.main .aside {
+  width: 30%;
+}
+.main .aside .bg-primary {
+  background-color: #1696af !important;
+}
+
+footer {
+  border: 3px solid silver;
+  border-bottom: 0;
+  margin-top: 70px;
+}
+
+@media (max-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  header .logo {
+    margin-bottom: 10px;
+  }
+  header .form-control {
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 0 30px !important;
+    margin-top: 20px;
+  }
+  section .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section .row .img {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .main .cards .card {
+    flex: 0 1 100%;
+  }
+  .main .aside {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .main .aside {
+    width: 100%;
+  }
+}
+@media (max-width: 426px) {
+  p {
+    font-size: 14px !important;
+  }
+  section .fw-light {
+    font-size: 16px !important;
+  }
+  .offcanvas {
+    padding: 5% 5% 0;
+  }
+}
+@media (max-width: 375px) {
+  header .form-control {
+    width: 100% !important;
+  }
+}
